@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Track It</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+            </header>
+            
+            <section class="stats">
+                <div class="stat-item">30,000 <span>Total Budget</span></div>
+                <div class="stat-item">17,000 <span>Total Expenses</span></div>
+                <div class="stat-item">13,000 <span>Total Left</span></div>
+   
+            </section>
+            
+            <section class="expenses">
+                <h2>Recent Expenses</h2>
+                <div class="expense-item fuel">
+                    <p>Office Commutation</p>
+                    <small>24 Oct 2024, Thursday</small>
+                    <p class="amount">₹1000.00</p>
+                    <span class="tag">Fuel</span>
+                </div>
+                
+                <div class="expense-item grocery">
+                    <p>Evening Vegetables</p>
+                    <small>15 Oct 2024, Thursday</small>
+                    <p class="amount">₹500.00</p>
+                    <span class="tag">Grocery</span>
+                </div>
+                
+                <div class="expense-item professional">
+                    <p>Office Party</p>
+                    <small>4 Oct 2024, Thursday</small>
+                    <p class="amount">₹3000.00</p>
+                    <span class="tag">Professional</span>
+                </div>
+                
+                <div class="expense-item personal">
+                    <p>Watch</p>
+                    <small>27 Oct 2024, Thursday</small>
+                    <p class="amount">₹8000.00</p>
+                    <span class="tag">Personal</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

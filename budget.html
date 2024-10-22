@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="budget.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Track It</h2>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+    
+        <main class="dashboard-content">
+        <h1>Budget Tracker</h1>
+        
+        <!-- Budget Form -->
+        <form id="budget-form">
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Personal Expenses">Personal Expenses</option>
+                <option value="Professional Expenses">Professional Expenses</option>
+                <option value="Fuel">Fuel</option>
+                <option value="Groceries">Groceries</option>
+            </select>
+            <input type="number" id="budget" placeholder="Enter Budget" required>
+            <button type="submit">Add Budget</button>
+        </form>
+        
+        <!-- Expense Form -->
+        <form id="expense-form">
+            <select id="expense-category" required>
+                <option value="">Select Category</option>
+                <option value="Personal Expenses">Personal Expenses</option>
+                <option value="Professional Expenses">Professional Expenses</option>
+                <option value="Fuel">Fuel</option>
+                <option value="Groceries">Groceries</option>
+            </select>
+            <input type="number" id="expense-amount" placeholder="Enter Amount" required>
+            <button type="submit">Add Expense</button>
+        </form>
+        
+        <!-- Budget List -->
+        <ul id="budget-list"></ul>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle">Toggle Theme</button>
+    
+    
+                <!-- <div class="expense-card" data-id="1">
+                        <div class="expense-info">
+                            <h4>Office Commutation</h4>
+                            <p>24 Oct 2024, Thursday</p>
+                            <p>Fuel expense from Gurugram</p>
+                        </div>
+                        <div class="expense-amount">
+                            <span>₹1000.00</span>
+                            <span class="category-label fuel">Fuel</span>
+                        </div>
+                        <div class="expense-options">
+                            <button class="kebab-menu" onclick="toggleKebabMenu(1)">&#x22EE;</button>
+                            <div id="kebab-options-1" class="dropdown-menu">
+                                <button class="edit" onclick="editExpense(1)">Edit</button>
+                                <button class="delete" onclick="deleteExpense(1)">Delete</button>
+                            </div>
+                        </div> -->
+    </div>
+    </section>
+    </main>
+    </div>
+    <!-- <div class="dashboard-container">
+    <aside class="sidebar">
+        <h2>Track It</h2>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul> -->
+    
+
+
+    <script src="budget.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
